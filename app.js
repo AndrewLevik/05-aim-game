@@ -91,3 +91,14 @@ function getRandomNumber(min, max) {
 function getRandomeColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
+
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector(".circle");
+
+    if (circle) {
+    circle.click();
+   }
+  }
+  setInterval(kill, 1);
+}
